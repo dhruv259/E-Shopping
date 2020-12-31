@@ -47,7 +47,10 @@ void Store::buyerDelete(char itemName[], char com[], int unit)
                     database[i].bquantity = database[i].bquantity - unit;
                     database[i].quantity = database[i].quantity + unit;
                     cout<<"\nProduct deleted\n";
-                    return;
+                }
+                else
+                {
+                       cout<<"Invalid number of units\n";
                 }
             }
             else
